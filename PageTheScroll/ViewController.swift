@@ -25,17 +25,17 @@ class ViewController: UIViewController {
             images.append(imageView)
             
             var newX: CGFloat = 0.0
-            
-            newX = view.frame.midX + view.frame.size.width * CGFloat(x)
+
+            newX = view.frame.size.width * CGFloat(x)
             
             contentWidth += newX
             
             ScrollView.addSubview(imageView)
-            imageView.frame = CGRect(x: newX - 100, y: (view.frame.size.height / 2) - 100, width: 200, height: 200)
+            imageView.frame = CGRect(x: newX, y: 0, width: ScrollView.frame.size.width, height: ScrollView.frame.size.height)
             
         }
         
-        ScrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
+        ScrollView.contentSize = CGSize(width: contentWidth, height: ScrollView.frame.size.height)
         
     }
     
