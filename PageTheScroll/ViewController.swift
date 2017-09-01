@@ -14,10 +14,18 @@ class ViewController: UIViewController {
     var images = [UIImageView]()
     
     override func viewDidLoad() {
+
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let scrollWidth = ScrollView.frame.size.width
         var contentWidth: CGFloat = 0.0
+        
+        print("ScrollView width: \(ScrollView.frame.size.width)")
         
         for x in 0..<3 {
             let image = UIImage(named: "icon\(x).png")
@@ -26,19 +34,19 @@ class ViewController: UIViewController {
             
             var newX: CGFloat = 0.0
             
-            newX = view.frame.midX + view.frame.size.width * CGFloat(x)
+            newX = scrollWidth / 2 + scrollWidth * CGFloat(x)
             
             contentWidth += newX
             
             ScrollView.addSubview(imageView)
-            imageView.frame = CGRect(x: newX - 100, y: (view.frame.size.height / 2) - 100, width: 200, height: 200)
+            imageView.frame = CGRect(x: newX - 100, y: (ScrollView.frame.size.height / 2) - 100, width: 200, height: 200)
             
         }
         
+//        ScrollView.backgroundColor = UIColor.purple
+        ScrollView.clipsToBounds = false
         ScrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
-        
     }
-    
     
 
 }

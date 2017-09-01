@@ -38,24 +38,25 @@
                                     <constraint firstAttribute="height" constant="161" id="49M-mp-Syc"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgE-dg-Iwg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgE-dg-Iwg">
+                                <rect key="frame" x="77" y="0.0" width="220" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="W3X-ld-1QS"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jgE-dg-Iwg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8cW-vI-ID6"/>
                             <constraint firstItem="Vkg-Vr-qX7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AUI-MN-ebA"/>
-                            <constraint firstAttribute="trailing" secondItem="jgE-dg-Iwg" secondAttribute="trailing" id="DpM-26-gui"/>
+                            <constraint firstItem="jgE-dg-Iwg" firstAttribute="height" secondItem="Vkg-Vr-qX7" secondAttribute="height" id="BkX-UO-0Ah"/>
                             <constraint firstAttribute="trailing" secondItem="KSe-pP-dF4" secondAttribute="trailing" id="HAK-2u-7NA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vkg-Vr-qX7" secondAttribute="bottom" id="K70-dg-eq1"/>
                             <constraint firstItem="Vkg-Vr-qX7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kk6-fi-shg"/>
                             <constraint firstItem="KSe-pP-dF4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pzu-ic-SVw"/>
-                            <constraint firstItem="jgE-dg-Iwg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bdQ-6Q-C7a"/>
+                            <constraint firstItem="jgE-dg-Iwg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZXi-Pl-lOG"/>
                             <constraint firstAttribute="trailing" secondItem="Vkg-Vr-qX7" secondAttribute="trailing" id="f7o-bL-Vwc"/>
                             <constraint firstItem="l6N-Kz-OmL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="iEQ-SA-llK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KSe-pP-dF4" secondAttribute="bottom" id="qWg-gD-DJl"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jgE-dg-Iwg" secondAttribute="bottom" id="sRz-7M-oZQ"/>
                             <constraint firstItem="l6N-Kz-OmL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wZf-eY-be6"/>
                         </constraints>
                     </view>
