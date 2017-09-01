@@ -31,11 +31,11 @@ class ViewController: UIViewController {
             contentWidth += newX
             
             ScrollView.addSubview(imageView)
-            imageView.frame = CGRect(x: newX, y: 0, width: ScrollView.frame.size.width, height: ScrollView.frame.size.height)
+            imageView.frame = CGRect(x: newX, y: 0, width: view.frame.size.width, height: view.frame.size.height)
             
         }
         
-        ScrollView.contentSize = CGSize(width: contentWidth, height: ScrollView.frame.size.height)
+        ScrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
         
     }
     
